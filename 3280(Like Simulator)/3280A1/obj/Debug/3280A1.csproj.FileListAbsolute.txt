@@ -1,0 +1,7 @@
+C:\Users\Stu\Desktop\3280Assignments\3280Assignment01\3280(Like Simulator)\3280A1\bin\Debug\3280A1.exe.config
+C:\Users\Stu\Desktop\3280Assignments\3280Assignment01\3280(Like Simulator)\3280A1\bin\Debug\3280A1.exe
+C:\Users\Stu\Desktop\3280Assignments\3280Assignment01\3280(Like Simulator)\3280A1\bin\Debug\3280A1.pdb
+C:\Users\Stu\Desktop\3280Assignments\3280Assignment01\3280(Like Simulator)\3280A1\obj\Debug\3280A1.csprojAssemblyReference.cache
+C:\Users\Stu\Desktop\3280Assignments\3280Assignment01\3280(Like Simulator)\3280A1\obj\Debug\3280A1.csproj.CoreCompileInputs.cache
+C:\Users\Stu\Desktop\3280Assignments\3280Assignment01\3280(Like Simulator)\3280A1\obj\Debug\3280A1.exe
+C:\Users\Stu\Desktop\3280Assignments\3280Assignment01\3280(Like Simulator)\3280A1\obj\Debug\3280A1.pdb
