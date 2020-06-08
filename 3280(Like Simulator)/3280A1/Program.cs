@@ -1,3 +1,11 @@
+
+/* Course: 3280
+ * Assignment: 01
+ * By
+ * Benjamin Medrano 
+ * 5/20/20
+ */
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,39 +19,53 @@ namespace CS3280A1
     {
         static void Main(string[] args)
         {
-            ConsoleColor textColor = ConsoleColor.DarkGreen;
-            Console.ForegroundColor = textColor;
 
-            ArrayList peopleWhoLikedPost = new ArrayList(); // List of names that like the post
-            var enteredName = "";   //Collects name from user input
+            var peopleWhoLikedPost = new List<string>(); // List of names that like the post
             bool userFinished = false; //Takes account if a user is finished entering names or not. 
 
             Console.WriteLine("\t\t\t\t\tAssignment #1: Facebook like simulator.");
             Console.WriteLine("\t\t\t\t\t\tWritten By Benjamin Medrano");
 
-            while(userFinished == false)
+            //This code will continuously prompt the user for names until they decide they are finished. 
+            while (!userFinished)
             {
-                Console.WriteLine("\nEnter a name: ");
-                enteredName = Console.ReadLine();
+                Console.Write("\nEnter a name: ");
+                var enteredName = Console.ReadLine();
 
-                if (enteredName == "") userFinished = true;
+                if (String.IsNullOrEmpty(enteredName))
+                {
+                    userFinished = true;
+                }
                 else
                 {
                     peopleWhoLikedPost.Add(enteredName);
                 }
             }
-            if(peopleWhoLikedPost.Count == 1)
+            if(peopleWhoLikedPost.Count > 2)
             {
-                Console.WriteLine(peopleWhoLikedPost[0] + " liked your post."); 
+                Console.WriteLine($"{peopleWhoLikedPost[0]}, {peopleWhoLikedPost[1]} and {peopleWhoLikedPost.Count - 2} others liked your post.");
+              
+
             }
             else if (peopleWhoLikedPost.Count > 1)
             {
-                Console.WriteLine($"{peopleWhoLikedPost[0]}, {peopleWhoLikedPost[1]} and {peopleWhoLikedPost.Count - 2} others liked your post.");
+                Console.WriteLine(peopleWhoLikedPost[0] + ", " + peopleWhoLikedPost[1] + " liked your post.");
+            }
+            else
+            {
+                Console.WriteLine(peopleWhoLikedPost[0] + " liked your post.");
             }
 
 
             Console.ReadKey(); 
 
         }
+
+        static Program()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+        }
+
     }
+
 }
